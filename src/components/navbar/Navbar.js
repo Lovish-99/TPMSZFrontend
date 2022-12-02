@@ -1,11 +1,13 @@
 import React from 'react';
 import './Navbar.css';
+import { Container } from 'react-bootstrap'
 
 function navbar() {
   return (
     <div>
       <nav class="navbar">
-        <div class="logo">Training & Placement Cell</div>
+        <Container>
+          <div class="logo">Placement Cell</div>
           <ul class="nav-links">
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
@@ -23,7 +25,8 @@ function navbar() {
               <li><a href="/">Contact</a></li>
             </div>
           </ul>
-        </nav>
+        </Container>
+      </nav>
     </div>
   )
 }
